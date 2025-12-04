@@ -1,1 +1,831 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(41, 47, 54);
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+
+/* HEADER STARTS */
+header {
+    width: 100%;
+    padding: 20px 50px;
+      overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+}
+
+.logo span:first-child {
+    color: rgb(152, 250, 236);
+}
+
+.logo .white {
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-left: 400px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+}
+
+.nav-links a.active {
+    color: rgb(152, 250, 236);
+}
+
+.search-social {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 90px;
+}
+
+.search-bar input {
+
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+
+    color: rgb(41, 47, 54);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.socials {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+    margin-left: 6px;
+    font-size: 20px;
+}
+
+/*HEADER ENDS */
+
+
+/* HERO SECTION */
+.hero {
+      
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px;
+    position: relative;
+    height: 100vh;
+}
+
+
+.left-box {
+    position: absolute;
+    left: 36px;
+    top: 10%;
+    width: 45px;
+    border: 2px solid white;
+    height: 300px;
+    border-radius: 25px;
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 33px;
+}
+
+.left-box .menu i {
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    padding: 2px 4px;
+}
+
+.second .left-box {
+    position: absolute;
+    background-color: rgb(41, 47, 54);
+    left: 240px;
+    top: 26%;
+    width: 260px;
+    height: 407px;
+    border: 3px solid white;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 140px;
+    box-shadow: -8px 6px 0px rgb(134, 247, 230);
+}
+
+.cv-card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.cv-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.cv-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+    box-shadow: 0;
+    font-family: 'IPM flex mono', monospace;
+    text-align: center;
+}
+
+.cv-info h4 {
+    box-shadow: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'IPM flex mono', monospace;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cv-info p {
+    box-shadow: 0;
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: 'IPM flex mono', monospace;
+    color: #ffffff;
+}
+
+.download-cv {
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 40px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    margin-right: 25px;
+    text-decoration: none;
+    border-radius: 26px;
+    box-shadow: -2px 0 1px rgb(255, 255, 255);
+}
+
+.download-cv:hover {
+
+    box-shadow: -7px 0 7px rgb(152, 250, 236);
+}
+
+.right-box {
+    width: 172px;
+    height: 320px;
+
+    border-radius: 86px;
+    background-color: rgb(26, 30, 35);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 13px;
+    justify-content: center;
+
+}
+
+.right-box p {
+    font-family: 'IBM flex mono', monospace;
+    color: white;
+    font-size: 15px;
+}
+
+.right-box p span {
+    color: rgb(152, 250, 236);
+    font-size: 33px;
+}
+
+
+
+.hero-content {
+    margin-left: 100px;
+    max-width: 450px;
+
+
+
+}
+
+.hero-content h1 {
+
+    font-size: 84px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(152, 250, 236);
+    margin-bottom: 90px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin: 20px 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.hero-content h2 span {
+    color: rgb(152, 250, 236);
+}
+
+.hero-content p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.talk-btn {
+    background-color: transparent;
+
+    color: rgb(152, 250, 236);
+    padding: 10px 25px;
+    font-size: 19px;
+
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.talk-btn i {
+    color: rgb(152, 250, 236);
+    background-color: #918f8f3d;
+    border-radius: 50%;
+    padding: 4px 7px;
+
+}
+
+/* HERO ENDS */
+
+
+/* ABOUT ME STARTS */
+.aboutme {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(26, 30, 35);
+    background-image: url("470ca001abefb91f7690b614bdee7956296b0d43.png");
+opacity: 0.8;
+       background-size: cover;
+    background-position: center;
+  
+}
+
+.aboutme-con {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.aboutmetext {
+    margin-top: 50px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+ 
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.aboutmetext h1 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    height: auto;
+    width:38%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-style: normal;
+    border: 2px solid rgb(152, 250, 236);
+    border-top-left-radius: 15px;
+     border-bottom-right-radius: 15px;
+    background-color: rgb(41, 47, 54) ;
+  
+}
+.justtext{
+    border-radius: 14px;
+        width: 90%;
+        padding: 10px;
+    height: 29vh;
+   background-color: rgb(41, 47, 54);
+   font-family: "IBM flex mono", monospace;
+}
+.justtext p span{
+    font-size:23px;
+    color: rgb(152, 250, 236);
+   
+}
+.justtext p {
+    font-size: 16px;
+}
+
+
+.aboutmeimg img {
+    width: 340px;
+    height: 370px;
+border-radius: 20px;
+box-shadow: 2px 2px 0.5 #000;
+    float: right;
+}
+
+/* ABOUTME ENDS */
+
+
+/* SKILLS SECTION STARTS */
+.skills-section {
+  width:100%;
+  height: auto;
+  background-image: url("keybo.jpg");
+
+}
+.skills-con{
+    width: 100%;
+    height:100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    margin-top:100px;
+  color: #00ffe5;
+  font-size: 5rem;
+  border-bottom:3px solid #00ffe5 ;
+  margin-bottom: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ .col{
+    margin-top: 80px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items:center ;
+    margin-bottom: 110px;
+    justify-content: center;
+}
+.col .box{
+    width:100%;
+    height: 11vh;  background: #00ffe53d;
+  border-radius: 8px;
+  padding:0 40px;
+  text-align: center;
+}
+.lala{
+    width:60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.subtitle {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.box {
+
+
+  h5{
+      font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+  }
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  margin: auto;
+}
+.html { background: #e44d26; }
+.css { background: #1572b6; }
+.js { background: #f0db4f; color: black; }
+.react { background: #61dafb; color: black; }
+/* SKILLS SECTION ENDS */
+
+
+/* BLOGS START */
+
+.blogs-section {
+    width: 100%;
+    height: auto;
+
+}
+.blogs-con{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blogs-con .section-title {
+
+      margin-top:100px;
+  color: #00ffe5;
+  font-size: 5rem;
+  border-bottom:3px solid #00ffe5 ;
+  margin-bottom: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.subtitle {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+.container.mt-5{
+    margin-top:30px;
+    width:70%;
+    border-bottom: 2px solid white;
+    border-top:2px solid white;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+.container.mt-5 img{
+ margin-top:30px;
+}
+.text-start{
+  width:90%;
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content: center;
+  h4{
+ 
+    font-size: 30px;
+    color:#00ffe5 ;
+  }
+  p{
+    font-size: 17px;
+  }
+  .text-info{
+    color:#00ffe5 ;
+    font-size:21px;
+  }
+}
+
+.blog-card {
+ 
+  border-radius: 10px;
+  width:100%;
+  height:50vh;
+}
+a {
+  text-decoration: none;
+}
+.mt-4{
+    margin-top:30px;
+    a{
+font-size: 23px;
+color:  #00ffe5 ;
+  border-radius: 30px;
+  padding:10px;
+    border: 2px solid   #00ffe5 ; }}
+.btn.btn-outline-info.me-2{
+
+
+    background-color:   #00ffe5 ;
+    color:#1f2325d5
+
+}
+/* BLOGS END */
+
+/* CONTACTS START */
+
+
+.contact-section {
+  width: 100%;
+  height: auto;
+  background-color: #1a1f24;;
+}
+.contact-con{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ align-items:center ;
+ position: relative;
+ gap:30px;
+ h2{
+    text-align: center;
+ }
+
+ p{
+    font-family: "IBM flex mono", monospace;
+ }
+}
+ .container.mt-4{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+gap:100px;
+    .btn.btn-outline-info.mb-4{
+      
+position:absolute;
+
+top:270px;
+font-size:24px;
+    border-top-left-radius: 31px;
+       border-top-right-radius: 0px;
+          border-bottom-left-radius: 0px;
+             border-bottom-right-radius: 31px;   } 
+    
+}
+.section-title {
+    margin-top:100px;
+  color: #00ffe5;
+  font-size: 4rem;
+  border-bottom:3px solid #00ffe5 ;
+  margin-bottom: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.subtitle {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+form label {
+  color: #00ffe5;
+
+}
+ 
+.inputs{
+width:1000px;
+ display: flex;
+ flex-direction: column;
+ gap:30px;
+}
+
+.mailcon{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    input{
+        width: 460px;
+           border-right: 0;
+           border-top: 0;
+           outline: none;
+           border-left: 0;
+      border-bottom: 2px solid aquamarine;
+    }
+
+}
+ .namecon{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    input{
+        outline: none;
+        width: 460px;
+           border-right: 0;
+           border-top: 0;
+           border-left: 0;
+      border-bottom: 2px solid aquamarine;
+    }
+
+}
+ .inputs-con1{
+    width: 100%;
+    height:50%;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+ .inputs-con2{
+    width: 100%;
+    height:50%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+textarea{    background-color: transparent;
+         width: 100%;
+           border-right: 0;
+           border-top: 0;
+           outline: none;
+           border-left: 0;
+      border-bottom: 2px solid aquamarine;
+
+}
+.btn.btn-info.text-dark.w-100.mt-3{
+    background-color: transparent;
+    width: 300px;
+    height: 100px;
+border: 2px solid aquamarine;
+border-radius: 40px;
+    text-align: center;
+    color:aquamarine;
+}
+
+ 
+input{
+
+background-color: rgb(26, 31, 36);
+
+}
+.text-start.mx-auto.mb-3{
+    width: 45%;
+    height:auto;
+    background-color: transparent;
+}
+footer {
+width: 100%;
+height: auto;
+background-color: rgb(26, 31, 36);
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+.works{width: 100%;
+    height: 100vh;
+    display: flex;
+    border-bottom: 0.1px solid rgba(15, 0, 0, 0.274);
+    align-items: center;
+    justify-content: center;
+
+h2{
+    margin-top: 50px;
+}
+.works img{
+
+
+ object-fit: cover;
+}
+}
+.works .container{
+    width:60%;
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 768px){
+    .hero{
+        width: 10%;
+        height: auto;
+        margin-bottom: 480px;
+    }
+    .hero .hero-content {
+
+
+    display: none;
+     
+}
+.hero .second .left-box{
+margin-top: 70px;
+    margin-left: -80px;
+}
+  .hero .right-box{
+       display: none;
+  }
+
+
+.aboutme{
+    width: 100%;
+    height: auto;
+
+}
+.aboutme .aboutme-con .aboutmetext{
+    h1{
+        margin-top:-100px;
+      width: 230px;
+      margin-left: -20px;
+    }
+}
+.aboutme .aboutme-con .aboutmetext .justtext{
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    margin-left: -50px;
+}
+.aboutme .aboutmeimg{
+    img{
+        display: none;
+    }
+}
+
+.skills-section{
+    width: 100%;
+ 
+    height: auto;
+}
+.skills-section .skills-con .col {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.skills-section .skills-con .lala{
+    display: none;
+}
+
+.works{
+    width:100%;
+    height: 100vh;
+    h2{
+        margin-top:0;
+        margin-bottom: 17px;
+    }
+}
+
+
+.blogs-section{
+    width: 100%;
+    height: auto;
+    border-top: 0.2px solid rgba(0, 0, 0, 0.171);
+}
+.blogs-section .blogs-con .text-start{
+    h4,p {
+        display: none;
+    }
+    a{
+        margin-left: 30px;
+    }
+}
+
+.contact-section{
+    width: 100%;
+    margin: 0;
+    height: 60vh;
+    form{
+        display: none;
+    }
+}
+.footer{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+}
